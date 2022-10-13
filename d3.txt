@@ -1,0 +1,60 @@
+Vi har laget et spill, hvor du flyr et romskip som skal fange skumle aliens som dukker opp! Bruk piltastene for å fly romskipet i ulike retninger, og treff romvesner for å fange dem!
+
+Last ned mappen InnfProg2022_DelEks3.zipLast ned InnfProg2022_DelEks3.zip. Den inneholder en fil med kode kalt catchaliens.html. Dette er filen du skal svare på spørsmål, kommentere og endre/skrive kode i. De andre filene trenger du ikke legge for mye fokus på med mindre oppgaveteksten ber deg om det.
+
+Åpne catchaliens.html i mappen dere har lastet ned. Les koden, jobb med å forstå hva den gjør. Når dere er kjent med koden, løs oppgavene som er presentert i kronologisk rekkefølge, enklest til vanskeligst.
+
+Hvordan det er forventet dere arbeider med oppgaven: Dere skal lese kode. Dere vil møte på biter av kode vi ikke har hatt om i forelesning enda, men dette skal være forståelig dersom man gjør oppslag og leser litt. Som når man lærer et nytt språk, må man ofte slå opp i ordboka for å forstå betydningen av et ord eller uttrykk. Slik er det i starten med programmering også; bruk Webtricks, W3Schools og Google for å forstå koden.
+
+Gode råd: Test mye underveis, og konsentrer deg om en oppgave av gangen. Hvis du blir stående fast på en oppgave, utsett denne og gå til neste. Spill spillet etterhvert som du utvikler, slik at du får testet og sett at spillet oppfører seg som forventet. Teller sekundene ned riktig? Starter spillet med riktige verdier? Få gjerne en medstudent til å spille/teste for deg!
+
+Husk: Kommenter all kode du redigerer eller lager selv! Målet med kommentarene er å vise forståelse for hva du gjør, i alle fall delene av det du forstår. Kildehenvisninger til hjelp og dokumentasjon du har benyttet i utviklingen kan legges inn som deler av kommentarene. Dette er en del av eksamensinnleveringen, og mangel på kode får innvirkning på godkjent/ikke godkjent, og påvirker karakter!
+
+OPPGAVER
+Minimum for bestått
+Oppgave 1: fiks feil
+Bruk konsollen for å løse opp feilene som må til for å få spillet spillbart. Kommenter under hver feil hva som var feil, og hva løsningen var.
+
+Oppgave 2: kommenter
+I koden er det tre blokker med kommentarer som ber deg forklare spesifikke deler av koden. Les koden, gjør nødvendig research for å forstå den, og kommenter hva koden utfører for spillet. OBS: kommenter hver linje med kode som etterspørres.
+
+Oppgave 3: endre spillinnstillinger
+1) Få Game Over-teksten til å stå i fonten Space Mono, med fontstørrelse 60 i rødt når denne dukker opp. Flytt teksten så midt i spillområdet som mulig.
+(Hint: drawGameElements() og https://www.w3schools.com/tags/canvas_font.aspLenker til en ekstern side. )
+2) 10 sekunder er kort tid å spille på. Endre slik at spillet varer i 60 sekunder.
+3) Endre størrelsen på spillbrettet til 960 (bredde) x 640 pixler.
+4) Få romskipet til å bevege seg raskere. 250 er for eksempel en fornuftig hastighet ved oppstart. (Ikke enig? Les koden, test nøye, argumenter egne valg i kode)
+
+Oppgave 4: start spill selv - spill flere ganger
+1) Fjern kodelinjen som gjør at spillet starter direkte når nettsiden lastes inn. 
+2) Lag en knapp (button) under spillområdet #gamearea. Denne skal synes når spillet starter.
+3) Bruk onclick-metoden til å kjøre funksjonen som starter spillet når knappen trykkes.
+4) Når spillet starter, skjul knappen (Hint: https://www.w3schools.com/jsref/prop_style_display.asp)Lenker til en ekstern side.
+5) Når tiden er ute, og du får Game Over, gjør knappen synlig igjen så du kan restarte spillet
+
+Karakter C-nivå  
+Oppgave 5
+Vi ønsker å lagre poengene i en historikk. Det ligger en variabel kalt history tilgjengelig i koden. Denne er en tom array, og kan brukes til å lagre poengsummen etter hvert spill. Finn ut hva i koden som kjører når spillet er ferdig (Hva er det som avgjør at et spill er ferdig? Hvor i koden skjer dette?). Her må du lagre nåværende poengsum som et nytt element mot slutten av arrayen.
+
+Lag kode som sørger for at hver gang man starter et nytt spill, tar man tak i arrayen history, løper gjennom denne, og skriver ut hver rundes poeng som et listeelement til HTML-listen med id "points"!
+
+Obs: Pass også på at man starter med 0 poeng hver gang man starter med et nytt spill.
+
+Karakter B-nivå  
+Oppgave 6
+Sørg for at romskipet ikke kan gå på utsiden av spillbrettet. For å løse dette må man ta hensyn til koordinatsystemet i canvas-elementet, X- og Y-koordinatene til romskipet og størrelsen på spill-elementene. Alle bildene av karakterer er 64 x 64 pixler store.
+
+Hint: Der spilleren beveger seg (i koden), må det sjekkes om veggen på siden av spillbrettet som samsvarer med retningen romskipet beveger seg i treffes. Hvis veggen treffes, må vi manuelt (altså, selv overstyre koden som automatisk lager posisjoner) sette posisjonen til romskipet. Hvis romskipet ikke treffer veggen, skal den vanlige bevegelsen fortsette.
+
+Karakter A-nivå 
+Oppgave 7
+Vi skal lage en fiende til! I mappen med filer ligger en bildefil kalt zorber.png. Du skal modifisere og eventuelt skrive nødvendig kode for å
+
+Laste inn zorber-bildet
+Gjøre klar bilde-object for en zorber
+Tegne opp en zorber ved spillets start
+zorberen skal kunne bli tatt (truffet) av romskipet. Når zorberen blir tatt, skal det tegnes opp en ny på et vilkårlig (random) sted på spillbrettet. Det skal altså skje akkurat det samme som allerede skjer for alien som finnes i spillet fra starten.
+zorberen og alien skal fungere hver for seg. Man skal altså kun tegne opp en ny alien når man tar en alien, og en ny zorber når man tar en zorber.
+En zorber er verdt 3 poeng, ikke 1. Gjør de nødvendige oppdateringene som behøves for å endre opptelling av aliens til å telle poeng riktig.
+LEVERANSE
+Lever din oppdaterte HTML-fil som besvarelse til denne oppgaven på canvas.

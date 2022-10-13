@@ -1,48 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- La til et søkefelt som ikke var med i wireframen. Jeg la det til fordi jeg hadde litt ekstra plass, men så hadde jeg ikke det 
+        mer etterhvert, men ville ikke kaste det bort, så jeg la det under nav baren. -->
+    <!-- desktop -->
     <!-- Wireframe: https://wireframe.cc/VOwa4W -->
     <!--Wireframe: https://wireframe.cc/EcQxrh-->
+
+    <!-- mobil -->
+    <!-- wireframe: https://wireframe.cc/tesV5n -->
+    <!-- wireframe:https://wireframe.cc/tesV5n -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
-    
+
     <link href="fonts/css/fontawesome.css" rel="stylesheet">
     <link href="fonts/css/brands.css" rel="stylesheet">
     <link href="fonts/css/solid.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
     <div id="grid-container">
         <header id="top-header">
-            <h1>top-header</h1>
+            <h1><a href="deleksamen2.html">Butikken</a></h1>
         </header>
 
         <nav>
-           
-            <li><a href="#">Menypunkt1</a></li>
-            <li><a href="#">Menypunkt1</a></li>
-            <li><a href="#">Menypunkt1</a></li>
-            <li><a href="#">Menypunkt1</a></li>
-          
+
+                <li><a id="icon" href="deleksamen2.html"><i class="fa-regular fa-house"></i> Hjem
+                <li><a class="nav-item" href="UU-innhold.html">UU vs SEO</a></li>
+                <li><a class="nav-item" href="CMS-innhold.html">CMS</a></li>
+                <li><a class="nav-item" href="Analyse-innhold.html">Analyse</a></li>
+                <li><a class="button" href="Kontaktoss.html">Kontakt Oss</a></li>
+
+
         </nav>
+        <section>
+            <input id="search-field" type="search" name="søk" placeholder=" søk...">
+        </section>
 
         <main>
-            <h1>main-tittel1</h1>
-            <article>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+            <article class="articlebox">
+            <h2><a class="h2" href="UU-innhold.html">UU vs SEO</h2></a>
+            <img class="article-img" src="img/uu.jpg" alt="bilde av en person i rullestol og en tekst der det står universell utforming.">
+            <p class="article">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+            <a href="UU-innhold.html" class="les-mer">Les mer <i class="fa-solid fa-arrow-right"></i></a>
             </article>
+            <article class="articlebox">
+                <h2><a class="h2" href="CMS-innhold.html">CMS</h2></a>
+                <img class="article-img" src="img/cms.webp" alt="Bilde av ulike elementer som er linka opp til et CMS system.">
+                <p class="article">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <a href="CMS-innhold.html" class="les-mer">Les mer <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+                <article class="articlebox">
+                    <h2><a class="h2" href="Analyse-innhold.html">Analyse</h2></a>
+                    <img class="article-img" src="img/analyse.webp" alt="bilde av et forstørrelsesglass som kikker på en graf.">
+                    <p class="article">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <a href="Analyse-innhold.html" class="les-mer">Les mer <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="articlebox">
+                        <h2><a class="h2" href="Kontaktoss.html">Kontakt oss</h2></a>
+                        <img class="article-img" src="img/kontaktoss.webp" alt="Bilde av en gjeng mennesker.">
+                        <p class="article">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <a href="Kontaktoss-innhold.html" class="les-mer">Les mer <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
         </main>
 
         <footer>
-           
-                <li><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+            <ul>
+                <li><a class="logo" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
                 <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
                 <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
                 <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-            
+            </ul>
+            <p id="C">Copyright 2022 <i class="fa-regular fa-copyright"></i></p>
         </footer>
 
     </div>
