@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infotorget | Melding sendt</title>
+              <!-- Ny metadata for SEO -->
+    <meta name="description" content="En analyse av nettstedets SEO og UU.">
+    <meta name="keywords" content="Analyse av nettsted, SEO, UU, HTML, artikkel, tabell">
+    <meta name="author" content="Max Aubert">
+              <!-- Favicon -->
+    <link type="image/png" sizes="96x96" rel="icon" href="img/favicon.png">
+              <!-- FontAwesome -->
+    <link href="fonts/css/fontawesome.css" rel="stylesheet" />
+    <link href="fonts/css/brands.css" rel="stylesheet" />
+    <link href="fonts/css/solid.css" rel="stylesheet" />
+             
+              <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+              <!-- Twitter og Facebook -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@flickr" />
+    <meta name="twitter:title" content="Small Island Developing States Photo Submission" />
+    <meta name="twitter:description" content="View the album on Flickr." />
+    <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
+
+    
+    <meta property="og:image" content="--Image url--" >
+    <meta property="og:url" content="https://itstud.hiof.no/~maxa/deleksamen_3_webutvikling/index.html">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="...">
+  </head>
+  <body>
+    <div id="grid-container">
+      <header id="form-header">
+        <h1 id="done-head">
+          Takk!
+        </h1>
+      </header>
+      <nav>
+        <ul id="nav-bar">
+          <li>
+            <a id="icon" href="index.html"><i class="fa-regular fa-house"></i> Hjem</a>
+          </li>
+          <li><a class="nav-item" href="UU-innhold.html">UU vs SEO</a></li>
+          <li><a class="nav-item" href="CMS-innhold.html">CMS</a></li>
+          <li><a class="nav-item" href="Analyse-innhold.html">Analyse</a></li>
+          <li>
+            <div class="container">
+            <button class="share-btn" alt="Del">
+              <i class="fas fa-share-alt"></i>
+            </button>
+            <div class="share-opt">
+                <p class="title">Share</p>
+                <div class="social-media">
+                    <button alt="Del på facebook" class="social-media-btn"><a id="face-share" data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-facebook-f"></i></a></button>
+                    <button alt="Del på linkedin" class="social-media-btn"><a id="linkedin-share" data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-linkedin-in"></i></a></button>
+                    <button alt="Send til Elon Musk" class="social-media-btn"><a id="twitter-share" data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-twitter"></i></a></button>
+                    <button alt="Del på reddit" class="social-media-btn"><a id="reddit-share" data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-reddit"></i></a></button>
+
+                    <div class="link-container">
+                        <button class="link" onclick="copy()">Kopier lenke</button>
+                        <input type="text" value="https://itstud.hiof.no/~maxa/infotorget/index.html" id="hidden-link">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </li>
+      <li><a id="day" alt="Lyst tema" href="../completed-form.html"><i class="fa-regular fa-sun"></i></a></li>
+          <li><a class="button" href="Kontaktoss.html">Kontakt Oss</a></li>
+        </ul>
+      </nav>
+      <main id="hidden-main">
+        <p id="done">din melding er mottatt!</p>
+        <i class="fa-regular fa-square-check"></i>
+      </main>
+      <footer>
+        <ul>
+          <li alt="Del på facebook" class="footerface"><a label="facebook" data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.infotorget.no"><i class="footer fab fa-facebook-f"></i></a></li>
+          <li alt="Send til Elon Musk"><a label="twitter" data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://www.infotorget.no"><i class="footer fa-brands fa-twitter"></i></a></li>
+          <li alt="Del på linkedin"><a label="linked" data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.infotorget.no"><i class="footer fa-brands fa-linkedin-in"></i></a></li>
+          <li alt="Del på reddit"><a label="reddit" data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://www.infotorget.no"><i class="footer fa-brands fa-reddit-alien"></i></a></li>
+        </ul>
+        <p id="C">Copyright 2022</p>
+      </footer>
+    </div>
+    <script>
+
+      const shareBtn = document.querySelector(".share-btn");
+      const shareOpt = document.querySelector(".share-opt");
+
+      shareBtn.addEventListener("click", () => {
+          shareOpt.classList.toggle("active")
+      });
+
+      //Copy to clipboard
+      function copy() {
+  let copyText = document.getElementById("hidden-link");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+  navigator.clipboard.writeText(copyText.value);
+}
+  </script>
+  </body>
+</html>

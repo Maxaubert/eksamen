@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infotorget | Analyse</title>
+              <!-- Ny metadata for SEO -->
+    <meta name="description" content="En analyse av nettstedets SEO og UU.">
+    <meta name="keywords" content="Analyse av nettsted, SEO, UU, HTML, artikkel, tabell">
+    <meta name="author" content="Max Aubert">
+              <!-- Favicon -->
+    <link type="image/png" sizes="96x96" rel="icon" href="img/favicon.png">
+              <!-- FontAwesome -->
+    <link href="fonts/css/fontawesome.css" rel="stylesheet" />
+    <link href="fonts/css/brands.css" rel="stylesheet" />
+    <link href="fonts/css/solid.css" rel="stylesheet" />
+             
+              <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+              <!-- Twitter og Facebook -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@flickr" />
+    <meta name="twitter:title" content="Small Island Developing States Photo Submission" />
+    <meta name="twitter:description" content="View the album on Flickr." />
+    <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
+
+    
+    <meta property="og:image" content="--Image url--" >
+    <meta property="og:url" content="https://itstud.hiof.no/~maxa/infotorget/index.html">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="...">
+  </head>
+  <body>
+    <div id="grid-container">
+      <header id="top-header">
+        <h1>
+          <a href="index.html">InfoTorget</a>
+        </h1>
+      </header>
+      <nav>
+        <ul id="nav-bar">
+          <li>
+            <a id="icon" href="index.html"><i class="fa-regular fa-house"></i> Hjem</a>
+          </li>
+          <li><a class="nav-item" href="UU-innhold.html">UU vs SEO</a></li>
+          <li><a class="nav-item" href="CMS-innhold.html">CMS</a></li>
+          <li><a class="nav-item" href="Analyse-innhold.html">Analyse</a></li>
+          <li>
+            <div class="container">
+            <button class="share-btn" alt="Del">
+              <i class="fas fa-share-alt"></i>
+            </button>
+            <div class="share-opt">
+                <p class="title">Share</p>
+                <div class="social-media">
+                    <button alt="Del på facebook" class="social-media-btn"><a id="face-share" data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-facebook-f"></i></a></button>
+                    <button alt="Del på linkedin" class="social-media-btn"><a id="linkedin-share" data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-linkedin-in"></i></a></button>
+                    <button alt="Send til Elon Musk" class="social-media-btn"><a id="twitter-share" data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-twitter"></i></a></button>
+                    <button alt="Del på reddit" class="social-media-btn"><a id="reddit-share" data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-reddit"></i></a></button>
+
+                    <div class="link-container">
+                        <button class="link" onclick="copy()">Kopier lenke</button>
+                        <input type="text" value="https://itstud.hiof.no/~maxa/infotorget/index.html" id="hidden-link">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </li>
+      <li><a alt="Mørkt tema" id="night" href="dark/Analyse-innhold.html"><i class="fa-regular fa-moon"></i></a></li>
+          <li><a class="button" href="Kontaktoss.html">Kontakt Oss</a></li>
+        </ul>
+      </nav>
+      <main>
+        <article class="innhold-articlebox">
+          <a class="back" href="index.html"><i class="fa-solid fa-arrow-left"></i> Tilbake</a>
+          <h2><a class="h2" href="Analyse-innhold.html">Analyse</a></h2>
+          <img
+            class="innhold-img"
+            src="img/analyse.webp"
+            alt="Bilde av ulike elementer som er linka opp til et CMS system."
+          />
+          <h2>Del 1: SEO</h2>
+          <p class="article">Som nenvnt i artikkelen om SEO <a id="article-link" href="UU-innhold.html">(uu og seo)</a>
+             er bruk av semantiske tagger veldig viktig. På nettstedet mitt har jeg til nå brukt for det meste brukt slike tagger. 
+            For å nevne noen så har jeg brukt: <span id="article-cursive">Meta-title, header, nav, h-tagger, main, article, span, ul, li, a og footer.</span>
+             Disse taggene hjelper nettleseren i å forstå hva innholdet er. Til tross for en god del bruk av disse taggene, er det fortsatt
+            en del forbedringspotensiale. I meta dataen er det flere tagger som ikke er brukt, men som kan brukes og vil bidra til en bedre SEO. 
+            Description, Keywords, favicon og author er de viktigste meta-taggene jeg har lagt til nå som vil hjelpe med SEO. Et annet sted jeg kan forbedre min SEO
+            er i bruken av div tagger. Disse er uspesifikke tagger, som ikke gir nettleseren noe god informasjon om hva innholdet faktisk er. Her har jeg i ettertid forsøkt å 
+            bruke mer sections, p og span tagger. En annen ting som kan effekte SEO-en negativt er om siden er treg. En ting som ofte kan bidra til en treg nettside er ukomprimerte bilder. 
+            Her har jeg valgt å ikke komprimere noen ting siden bildene var ganske komprimerte fra før og utgjorde ikke noe mer enn 100kb. Det siste jeg har jobbet med,
+             og som kanskje er det viktigste er å forbedre responsiviteten, slik at siden er tilgjengelig for mobil og nettbrett. Her har jeg for eksempel utvidet det horizontalet området teksten
+             opptar, endret litt på nav-baren, tatt vekk delingsknappen og byttet om til en footer med delingsknapper. Utifra hvilken skjermstørrelse som blir brukt har jeg gjort visse endringer og sammenspleisinger
+             av mobil og desktop layout. 
+          </p>
+          <h2 id="h2-mobil">Mobil</h2>
+          <div id="h2-nf-container">
+          <h2 id="h2-nav">Nav</h2>
+          <h2 id="h2-footer">Footer</h2>
+        </div>
+          <div class="m-layout-container">
+            <h2 id="m-h2-nav">Nav</h2>
+          <img class="m-layout" src="img/layout-mobile.png" alt="nav-baren for mobil er satt vertiklart istedenfor horizontalt">
+          <h2 id="m-h2-footer">Footer</h2>
+          <img class="m-layout" src="img/footer-mobile.png" alt="Delingslinkene er satt til footer knapper">
+        </div>
+          <section id="mytable">
+            <div id="table-uu">
+              <span class="head header">SEO før og etter</span>
+              <span class="head">Før</span>
+              <span class="head">Etter</span>
+
+              <span class="category">Title tag</span>
+              <span>Kun sidenavn</span>
+              <span class="right">Sidenavn + nettsted</span>
+
+              <span class="category">Nøkkelord i meta-tittelen</span>
+              <span><i class="fa-solid fa-xmark"></i></span>
+              <span class="right"><i class="fa-solid fa-check"></i></span>
+
+              <span class="category">Bruk av semantiske tagger</span>
+              <span><i class="fa-solid fa-check"></i></span>
+              <span class="right"><i class="fa-solid fa-check"></i></span>
+
+              <span class="category">Kort og enkel URL</span>
+              <span><i class="fa-solid fa-check"></i></span>
+              <span class="right"><i class="fa-solid fa-check"></i></span>
+
+              <span class="category">Bildestørrelser</span>
+              <span><i class="fa-solid fa-xmark"></i></span>
+              <span class="right"><i class="fa-solid fa-check"></i></span>
+
+              <span class="category">Hastighet på nettsiden</span>
+              <span><i class="fa-solid fa-xmark"></i></span>
+              <span class="right"><i class="fa-solid fa-check"></i></span>
+
+              <span class="category">Kontraster</span>
+              <span><i class="fa-solid fa-check"></i></span>
+              <span class="right"><i class="fa-solid fa-check"></i></span>
+
+              <span class="category">Mobilvennlighet</span>
+              <span><i class="fa-solid fa-check"></i></span>
+              <span class="right"><i class="fa-solid fa-check"></i></span>
+
+              <span class="bottom category">Alt tekst</span>
+              <span class="bottom"><i class="fa-solid fa-check"></i></span>
+              <span class="right bottom"><i class="fa-solid fa-check"></i></span>
+            </div>
+          </section>
+          <h2>Del 2: Universell utforming</h2>
+          <p class="article">En del av det man gjør for å forbedre SEO er også aktuelt når det kommer til UU. Så et par av
+            problemene på siden var allerede gjort. Kanskje det er allikevel en del jeg kunne ta tak i. Etter nå å ha kjørt siden min gjennom ulike verktøy
+            har jeg oppdaga noen steder med forbedringspotensiale.</br>
+            Det første jeg tok tak i var å legge ved mer beskrivene alt tagger, og sørget for at knapper, blant annet sosiale medier linker, mørkt/lyst tema og deleknappen hadde en
+            alt tekst, slik at det kan betjenes av blinde. På den versjonen av siden med mørkt tema har jeg måttet gjøre et par endringer med kontrastene. 
+            Overskriftene, noen knapper og lenker
+            hadde en ratio som var mindre en AA standaren som er på 4.5. Som følge har jeg nå endret alle disse til å være innenfor.</br>
+            Jeg har også testet med lighthouse på sidene mine, der fikk jeg rundt 90 på de fleste. Det var noen sider der jeg hadde litt mindre, rundt 86.
+          </br>Lighthouse klagde blant annet på at noen av linkene ikke var navngitt, og det har jeg nå endret. 
+          </p>
+          <h2 class="before-after-con">Før</h2>
+          <div class="contrast-img-con">
+          <img alt="bilde av knapper med og overskrift med dårlig kontrast" class="contrast-img" src="img/UU-kontraster-img.png">
+          <img alt="mørkt tema | bilde av knapper med og overskrift med dårlig kontrast" class="contrast-img" src="img/UU-kontraster-dark-img.png">
+          </div>
+          <h2 class="before-after-con">Etter</h2>
+          <div class="contrast-img-con">
+          <img alt="bilde av knapper med og overskrift med bedre kontrast" class="contrast-img" src="img/UU-bedreKontraster.png">
+          <img alt="mørkt tema | bilde av knapper med og overskrift med dårlig kontrast" class="contrast-img" src="img/UU-bedreKontraster-dark.png">
+          </div>
+          <h3 id="accessibility-decleration"><a href="accessibilitydecleration.html">Tilgjengelighetserklæring <i class="fa-solid fa-right-to-bracket"></i></a></h3>
+          <h4 class="source-ref">Brukte kilder</h4>
+          <ul class="source-ref">
+            <li class="source-li">
+              <a href="https://www.youtube.com/watch?v=JSm4aQl4w_U&t=1321s">Video om ulike elementer som inngår i SEO</a>
+            </li>   
+            <li class="source-li">
+              <a href="https://www.youtube.com/watch?v=7JwJvaE9M2Y&t=95s">Video om ulike elementer som inngår i SEO (mer basic)</a>
+            </li>
+          </ul>
+        </article>
+      </main>
+      <footer>
+        <ul>
+          <li alt="Del på facebook" class="footerface"><a label="facebook" data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.infotorget.no"><i class="footer fab fa-facebook-f"></i></a></li>
+          <li alt="Send til Elon Musk"><a label="twitter" data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://www.infotorget.no"><i class="footer fa-brands fa-twitter"></i></a></li>
+          <li alt="Del på linkedin"><a label="linked" data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.infotorget.no"><i class="footer fa-brands fa-linkedin-in"></i></a></li>
+          <li alt="Del på reddit"><a label="reddit" data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://www.infotorget.no"><i class="footer fa-brands fa-reddit-alien"></i></a></li>
+        </ul>
+        <p id="C">Copyright 2022</p>
+      </footer>
+    </div>
+    <script>
+      const shareBtn = document.querySelector(".share-btn");
+      const shareOpt = document.querySelector(".share-opt");
+
+      shareBtn.addEventListener("click", () => {
+          shareOpt.classList.toggle("active")
+      });
+
+      //Copy to clipboard
+      function copy() {
+  let copyText = document.getElementById("hidden-link");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+  navigator.clipboard.writeText(copyText.value);
+}
+  </script>
+  </body>
+</html>
