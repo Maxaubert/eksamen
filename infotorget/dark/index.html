@@ -15,8 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Infotorget | Forside</title>
               <!-- Ny metadata for SEO -->
-    <meta name="description" content="En analyse av nettstedets SEO og UU.">
-    <meta name="keywords" content="Analyse av nettsted, SEO, UU, HTML, artikkel, tabell">
+    <meta name="description" content="En oversikt over alle artiklene. UU vs SEO, CMS, Analyse av SEO og UU og kontakt oss">
+    <meta name="keywords" content="oversikt, artikkel, SEO, UU, HTML">
     <meta name="author" content="Max Aubert">
               <!-- Favicon -->
     <link type="image/png" sizes="96x96" rel="icon" href="img/favicon.png">
@@ -30,17 +30,16 @@
 
               <!-- Twitter og Facebook -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@flickr" />
-    <meta name="twitter:title" content="Small Island Developing States Photo Submission" />
-    <meta name="twitter:description" content="View the album on Flickr." />
-    <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
-
-    
-    <meta property="og:image" content="--Image url--" >
-    <meta property="og:url" content="https://itstud.hiof.no/~maxa/infotorget/index.html">
-    <meta property="og:title" content="">
-    <meta property="og:type" content="article">
-    <meta property="og:description" content="...">
+    <meta name="twitter:site" content="https://itstud.hiof.no/~maxa/infotorget/index.html" />
+    <meta name="twitter:title" content="Infotorget | Forside" />
+    <meta name="twitter:description" content="Infotorget har artikler om UU, SEO og CMS." />
+    <meta name="twitter:image" content="https://itstud.hiof.no/~maxa/infotorget/img/UU-bedreKontraster.jpg" />
+          
+              
+    <meta property="og:title" content="Infotorget | Forside" />
+    <meta property="og:type" content="aricle" />
+    <meta property="og:image" content="/img/UU-bedreKontraster.jpg" />
+    <meta property="og:url" content="https://itstud.hiof.no/~maxa/infotorget/index.html" />
   </head>
   <body>
     <div id="grid-container">
@@ -59,16 +58,16 @@
           <li><a class="nav-item" href="Analyse-innhold.html">Analyse</a></li>
           <li>
             <div class="container">
-            <button class="share-btn" alt="Del">
+            <button class="share-btn" name="Del">
               <i class="fas fa-share-alt"></i>
             </button>
             <div class="share-opt">
                 <p class="title">Share</p>
                 <div class="social-media">
-                    <button alt="Del på facebook" class="social-media-btn"><a id="face-share" data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-facebook-f"></i></a></button>
-                    <button alt="Del på linkedin" class="social-media-btn"><a id="linkedin-share" data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-linkedin-in"></i></a></button>
-                    <button alt="Send til Elon Musk" class="social-media-btn"><a id="twitter-share" data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-twitter"></i></a></button>
-                    <button alt="Del på reddit" class="social-media-btn"><a id="reddit-share" data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-reddit"></i></a></button>
+                    <button name="Del på facebook" class="social-media-btn" id="face-share" data-share="aricle:Facebook"  onclick="window.location.href='https://www.facebook.com/sharer.php?u=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-facebook-f"></i></button>
+                    <button name="Del på linkedin" class="social-media-btn" id="linkedin-share" data-share="aricle:Linkedin"  onclick="window.location.href='http://www.linkedin.com/shareArticle?mini=true&amp;url=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-linkedin-in"></i></button>
+                    <button name="Del på twitter" class="social-media-btn" id="twitter-share" data-share="aricle:Twitter"   onclick="window.location.href='https://twitter.com/share?url=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-twitter"></i></button>
+                    <button name="Del på reddit" class="social-media-btn" id="reddit-share" data-share="aricle:Reddit"   onclick="window.location.href='https://reddit.com/submit?url=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-reddit"></i></button>
 
                     <div class="link-container">
                         <button class="link" onclick="copy()">Kopier lenke</button>
@@ -78,7 +77,7 @@
             </div>
         </div>
       </li>
-      <li><a id="day" alt="Lyst tema" href="../index.html"><i class="fa-regular fa-sun"></i></a></li>
+      <li><a id="day" href="../index.html"><i class="fa-regular fa-sun"></i></a></li>
           <li><a class="button" href="Kontaktoss.html">Kontakt Oss</a></li>
         </ul>
       </nav>
@@ -91,9 +90,10 @@
             alt="bilde av en person i rullestol og en tekst der det står universell utforming."
           />
           <p class="article-index">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book.
+            UU eller universell utforming handler om å gjøre nettsiden tilgengjelig for alle
+            brukere. Det betyr at alle brukere skal kunne forstå og betjene siden. I Norge er det
+            også lovpålagt at visse krav til siden skal være oppfylt. I privat sektor skal nettsider
+            oppnå en minimumsscore på 35 i WCAG 2.0.
           </p>
           <a href="UU-innhold.html" class="read-more"
             >Les mer <i class="fa-solid fa-arrow-right"></i
@@ -107,9 +107,9 @@
             alt="Bilde av ulike elementer som er linka opp til et CMS system."
           />
           <p class="article-index">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book.
+            CMS (content management system) er et verktøy som gjør det enklere å redigere og
+            administrere innholdet på en nettside. Det gjør at man ikke nødvendigvis trenger en
+            utvikler eller ha kjennskap til koding for å kunne redigere innholdet på siden.
           </p>
           <a href="CMS-innhold.html" class="read-more"
             >Les mer <i class="fa-solid fa-arrow-right"></i
@@ -123,9 +123,10 @@
             alt="bilde av et forstørrelsesglass som kikker på en graf."
           />
           <p class="article-index">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book.
+            Som nenvnt i artikkelen om SEO <a id="article-link" href="UU-innhold.html">(uu og seo)</a>
+            er bruk av semantiske tagger veldig viktig. På nettstedet mitt har jeg til nå brukt for det meste brukt slike tagger. 
+           For å nevne noen så har jeg brukt:Meta-title, header, nav, h-tagger, main, article, span, ul, li, a og footer.
+            Disse taggene hjelper nettleseren i å forstå hva innholdet er.
           </p>
           <a href="Analyse-innhold.html" class="read-more"
             >Les mer <i class="fa-solid fa-arrow-right"></i
@@ -134,22 +135,17 @@
         <article class="articlebox">
           <h2><a class="h2" href="Kontaktoss.html">Kontakt oss</a></h2>
           <img class="article-img" src="img/kontaktoss.webp" alt="Bilde av en gjeng mennesker." />
-          <p class="article-index">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type specimen book.
-          </p>
-          <a href="Kontaktoss.html" class="read-more"
-            >Les mer <i class="fa-solid fa-arrow-right"></i
-          ></a>
+          <a href="Kontaktoss.html" class="read-more contactus-link"
+          >Ta kontakt <i class="fa-solid fa-right-to-bracket"></i
+        ></a>
         </article>
       </main>
       <footer>
         <ul>
-          <li alt="Del på facebook" class="footerface"><a label="facebook" data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.infotorget.no"><i class="footer fab fa-facebook-f"></i></a></li>
-          <li alt="Send til Elon Musk"><a label="twitter" data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://www.infotorget.no"><i class="footer fa-brands fa-twitter"></i></a></li>
-          <li alt="Del på linkedin"><a label="linked" data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.infotorget.no"><i class="footer fa-brands fa-linkedin-in"></i></a></li>
-          <li alt="Del på reddit"><a label="reddit" data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://www.infotorget.no"><i class="footer fa-brands fa-reddit-alien"></i></a></li>
+          <li class="name"><a data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.infotorget.no"><i class="footer fab fa-facebook-f"></i></a></li>
+          <li><a data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://www.infotorget.no"><i class="footer fa-brands fa-twitter"></i></a></li>
+          <li><a data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.infotorget.no"><i class="footer fa-brands fa-linkedin-in"></i></a></li>
+          <li><a data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://www.infotorget.no"><i class="footer fa-brands fa-reddit-alien"></i></a></li>
         </ul>
         <p id="C">Copyright 2022</p>
       </footer>
@@ -172,10 +168,3 @@
   </script>
   </body>
 </html>
-<!-- TODO
-  legg til url for hver side
-  endre example.com
-  ta vekk footer css
-  kildereferer delingsfunksjon
-  kopier over metadata når den er ferdig
- -->

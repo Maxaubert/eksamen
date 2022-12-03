@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Infotorget | UU vs SEO</title>
               <!-- Ny metadata for SEO -->
-    <meta name="description" content="En analyse av nettstedets SEO og UU.">
+    <meta name="description" content="En artikkel om universell utforming">
     <meta name="keywords" content="Analyse av nettsted, SEO, UU, HTML, artikkel, tabell">
     <meta name="author" content="Max Aubert">
               <!-- Favicon -->
@@ -21,17 +21,16 @@
 
               <!-- Twitter og Facebook -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@flickr" />
-    <meta name="twitter:title" content="Small Island Developing States Photo Submission" />
-    <meta name="twitter:description" content="View the album on Flickr." />
-    <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
-
-    
-    <meta property="og:image" content="--Image url--" >
-    <meta property="og:url" content="https://itstud.hiof.no/~maxa/deleksamen_3_webutvikling/index.html">
-    <meta property="og:title" content="">
-    <meta property="og:type" content="article">
-    <meta property="og:description" content="...">
+    <meta name="twitter:site" content="https://itstud.hiof.no/~maxa/infotorget/UU-innhold.html" />
+    <meta name="twitter:title" content="Infotorget | Universell utforming og SEO" />
+    <meta name="twitter:description" content="Lær om universell utforming og SEO" />
+    <meta name="twitter:image" content="https://itstud.hiof.no/~maxa/infotorget/img/uu.jpg" />
+          
+              
+    <meta property="og:title" content="Infotorget | Universell utfomring og SEO" />
+    <meta property="og:type" content="aricle" />
+    <meta property="og:image" content="/img/uu.jpg" />
+    <meta property="og:url" content="https://itstud.hiof.no/~maxa/infotorget/UU-innhold.html" />
   </head>
   <body>
     <div id="grid-container">
@@ -50,16 +49,16 @@
           <li><a class="nav-item" href="Analyse-innhold.html">Analyse</a></li>
           <li>
             <div class="container">
-            <button class="share-btn" alt="Del">
+            <button class="share-btn" name="Del">
               <i class="fas fa-share-alt"></i>
             </button>
             <div class="share-opt">
                 <p class="title">Share</p>
                 <div class="social-media">
-                    <button alt="Del på facebook" class="social-media-btn"><a id="face-share" data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-facebook-f"></i></a></button>
-                    <button alt="Del på linkedin" class="social-media-btn"><a id="linkedin-share" data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-linkedin-in"></i></a></button>
-                    <button alt="Send til Elon Musk" class="social-media-btn"><a id="twitter-share" data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-twitter"></i></a></button>
-                    <button alt="Del på reddit" class="social-media-btn"><a id="reddit-share" data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-reddit"></i></a></button>
+                  <button name="Del på facebook" class="social-media-btn" id="face-share" data-share="aricle:Facebook"  onclick="window.location.href='https://www.facebook.com/sharer.php?u=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-facebook-f"></i></button>
+                  <button name="Del på linkedin" class="social-media-btn" id="linkedin-share" data-share="aricle:Linkedin"  onclick="window.location.href='http://www.linkedin.com/shareArticle?mini=true&amp;url=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-linkedin-in"></i></button>
+                  <button name="Del på twitter" class="social-media-btn" id="twitter-share" data-share="aricle:Twitter"   onclick="window.location.href='https://twitter.com/share?url=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-twitter"></i></button>
+                  <button name="Del på reddit" class="social-media-btn" id="reddit-share" data-share="aricle:Reddit"   onclick="window.location.href='https://reddit.com/submit?url=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-reddit"></i></button>
 
                     <div class="link-container">
                         <button class="link" onclick="copy()">Kopier lenke</button>
@@ -69,7 +68,7 @@
             </div>
         </div>
       </li>
-      <li><a alt="Mørkt tema" id="night" href="dark/UU-innhold.html"><i class="fa-regular fa-moon"></i></a></li>
+      <li><a id="night" href="dark/UU-innhold.html"><i class="fa-regular fa-moon"></i></a></li>
           <li><a class="button" href="Kontaktoss.html">Kontakt Oss</a></li>
         </ul>
       </nav>
@@ -178,10 +177,10 @@
       </main>
       <footer>
         <ul>
-          <li alt="Del på facebook" class="footerface"><a label="facebook" data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.infotorget.no"><i class="footer fab fa-facebook-f"></i></a></li>
-          <li alt="Send til Elon Musk"><a label="twitter" data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://www.infotorget.no"><i class="footer fa-brands fa-twitter"></i></a></li>
-          <li alt="Del på linkedin"><a label="linked" data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.infotorget.no"><i class="footer fa-brands fa-linkedin-in"></i></a></li>
-          <li alt="Del på reddit"><a label="reddit" data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://www.infotorget.no"><i class="footer fa-brands fa-reddit-alien"></i></a></li>
+          <li class="name"><a data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.infotorget.no"><i class="footer fab fa-facebook-f"></i></a></li>
+          <li><a data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://www.infotorget.no"><i class="footer fa-brands fa-twitter"></i></a></li>
+          <li><a data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.infotorget.no"><i class="footer fa-brands fa-linkedin-in"></i></a></li>
+          <li><a data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://www.infotorget.no"><i class="footer fa-brands fa-reddit-alien"></i></a></li>
         </ul>
         <p id="C">Copyright 2022</p>
       </footer>

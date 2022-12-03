@@ -13,9 +13,10 @@
 /* vikitge kilder:
 css-gradient: https://www.youtube.com/watch?v=4kWHW7da4U8&t=92s
 css-gradient 2:https://www.youtube.com/watch?v=lIMt0yK53Ms
-hsl: https://www.youtube.com/watch?v=Ab9pHqhsfcc&t=334s
-grid-table:https://www.youtube.com/watch?v=yJQ9JEqznPM&t=187s
-border-gradient: https://codepen.io/unnegative/pen/dVwYBq
+HSL: https://www.youtube.com/watch?v=Ab9pHqhsfcc&t=334s
+Grid-table:https://www.youtube.com/watch?v=yJQ9JEqznPM&t=187s
+Border-gradient: https://codepen.io/unnegative/pen/dVwYBq
+Delingsmeny: https://www.youtube.com/watch?v=lSO6FvNCFLU
 */
 
 #grid-container{
@@ -811,6 +812,18 @@ body::-webkit-scrollbar {
   }
   .type2{
     font-size: 30px;
+  }
+  .contactus-link{
+    font-size: 2.5rem;
+    margin:auto;
+    background:rgb(167, 180, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .contactus-link:hover{
+    background: rgb(93, 100, 143);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
 

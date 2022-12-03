@@ -21,17 +21,16 @@
 
               <!-- Twitter og Facebook -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@flickr" />
-    <meta name="twitter:title" content="Small Island Developing States Photo Submission" />
-    <meta name="twitter:description" content="View the album on Flickr." />
-    <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
-
-    
-    <meta property="og:image" content="--Image url--" >
-    <meta property="og:url" content="https://itstud.hiof.no/~maxa/infotorget/index.html">
-    <meta property="og:title" content="">
-    <meta property="og:type" content="article">
-    <meta property="og:description" content="...">
+    <meta name="twitter:site" content="https://itstud.hiof.no/~maxa/infotorget/Analyse-innhold.html" />
+    <meta name="twitter:title" content="Infotorget | Analyse av SEO og UU" />
+    <meta name="twitter:description" content="Les om vår analyse av vår egen side." />
+    <meta name="twitter:image" content="https://itstud.hiof.no/~maxa/infotorget/img/Analyse-innhold.webp" />
+                                        
+                                                      
+    <meta property="og:title" content="Infotorget | Analyse av SEO og UU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="/img/analyse.webp" />
+    <meta property="og:url" content="https://itstud.hiof.no/~maxa/infotorget/Analyse-innhold.html" />
   </head>
   <body>
     <div id="grid-container">
@@ -50,16 +49,16 @@
           <li><a class="nav-item" href="Analyse-innhold.html">Analyse</a></li>
           <li>
             <div class="container">
-            <button class="share-btn" alt="Del">
+            <button class="share-btn" name="Del">
               <i class="fas fa-share-alt"></i>
             </button>
             <div class="share-opt">
                 <p class="title">Share</p>
                 <div class="social-media">
-                    <button alt="Del på facebook" class="social-media-btn"><a id="face-share" data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-facebook-f"></i></a></button>
-                    <button alt="Del på linkedin" class="social-media-btn"><a id="linkedin-share" data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-linkedin-in"></i></a></button>
-                    <button alt="Send til Elon Musk" class="social-media-btn"><a id="twitter-share" data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-twitter"></i></a></button>
-                    <button alt="Del på reddit" class="social-media-btn"><a id="reddit-share" data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://itstud.hiof.no/~maxa/infotorget/index.html"><i class="fab fa-reddit"></i></a></button>
+                  <button name="Del på facebook" class="social-media-btn" id="face-share" data-share="aricle:Facebook"  onclick="window.location.href='https://www.facebook.com/sharer.php?u=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-facebook-f"></i></button>
+                  <button name="Del på linkedin" class="social-media-btn" id="linkedin-share" data-share="aricle:Linkedin"  onclick="window.location.href='http://www.linkedin.com/shareArticle?mini=true&amp;url=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-linkedin-in"></i></button>
+                  <button name="Del på twitter" class="social-media-btn" id="twitter-share" data-share="aricle:Twitter"   onclick="window.location.href='https://twitter.com/share?url=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-twitter"></i></button>
+                  <button name="Del på reddit" class="social-media-btn" id="reddit-share" data-share="aricle:Reddit"   onclick="window.location.href='https://reddit.com/submit?url=https://itstud.hiof.no/~maxa/infotorget/index.html'"><i class="fab fa-reddit"></i></button>
 
                     <div class="link-container">
                         <button class="link" onclick="copy()">Kopier lenke</button>
@@ -69,7 +68,7 @@
             </div>
         </div>
       </li>
-      <li><a alt="Mørkt tema" id="night" href="dark/Analyse-innhold.html"><i class="fa-regular fa-moon"></i></a></li>
+      <li><a id="night" href="dark/Analyse-innhold.html"><i class="fa-regular fa-moon"></i></a></li>
           <li><a class="button" href="Kontaktoss.html">Kontakt Oss</a></li>
         </ul>
       </nav>
@@ -117,49 +116,49 @@
               <span>Kun sidenavn</span>
               <span class="right">Sidenavn + nettsted</span>
 
-              <span class="category">Nøkkelord i meta-tittelen</span>
+              <span class="category">Bruk av semantiske tagger</span>
+              <span><i class="fa-solid fa-check"></i></span>
+              <span class="right"><i class="fa-solid fa-check"></i> (Lagt ved flere)</span>
+
+              <span class="category">Bruk av andre deskriptive meta-tagger (description, keywords, author)</span>
               <span><i class="fa-solid fa-xmark"></i></span>
               <span class="right"><i class="fa-solid fa-check"></i></span>
 
-              <span class="category">Bruk av semantiske tagger</span>
-              <span><i class="fa-solid fa-check"></i></span>
-              <span class="right"><i class="fa-solid fa-check"></i></span>
-
               <span class="category">Kort og enkel URL</span>
-              <span><i class="fa-solid fa-check"></i></span>
+              <span>Haddde ikke unik title-tag for hver side</span>
               <span class="right"><i class="fa-solid fa-check"></i></span>
 
-              <span class="category">Bildestørrelser</span>
+              <span class="category">Favicon</span>
               <span><i class="fa-solid fa-xmark"></i></span>
               <span class="right"><i class="fa-solid fa-check"></i></span>
 
               <span class="category">Hastighet på nettsiden</span>
-              <span><i class="fa-solid fa-xmark"></i></span>
-              <span class="right"><i class="fa-solid fa-check"></i></span>
-
-              <span class="category">Kontraster</span>
               <span><i class="fa-solid fa-check"></i></span>
               <span class="right"><i class="fa-solid fa-check"></i></span>
 
-              <span class="category">Mobilvennlighet</span>
+              <span class="category">bildestørrelser</span>
               <span><i class="fa-solid fa-check"></i></span>
               <span class="right"><i class="fa-solid fa-check"></i></span>
 
-              <span class="bottom category">Alt tekst</span>
+              <span class="category">alt tekst</span>
+              <span><i class="fa-solid fa-check"></i></span>
+              <span class="right"><i class="fa-solid fa-check"></i> (men flere)</span>
+
+              <span class="bottom category">Mobilvennlighet</span>
               <span class="bottom"><i class="fa-solid fa-check"></i></span>
-              <span class="right bottom"><i class="fa-solid fa-check"></i></span>
+              <span class="right bottom"><i class="fa-solid fa-check"></i>(Men det er blitt litt bedre)</span>
             </div>
           </section>
           <h2>Del 2: Universell utforming</h2>
           <p class="article">En del av det man gjør for å forbedre SEO er også aktuelt når det kommer til UU. Så et par av
             problemene på siden var allerede gjort. Kanskje det er allikevel en del jeg kunne ta tak i. Etter nå å ha kjørt siden min gjennom ulike verktøy
-            har jeg oppdaga noen steder med forbedringspotensiale.</br>
+            har jeg oppdaga noen steder med forbedringspotensiale.<br>
             Det første jeg tok tak i var å legge ved mer beskrivene alt tagger, og sørget for at knapper, blant annet sosiale medier linker, mørkt/lyst tema og deleknappen hadde en
             alt tekst, slik at det kan betjenes av blinde. På den versjonen av siden med mørkt tema har jeg måttet gjøre et par endringer med kontrastene. 
             Overskriftene, noen knapper og lenker
-            hadde en ratio som var mindre en AA standaren som er på 4.5. Som følge har jeg nå endret alle disse til å være innenfor.</br>
+            hadde en ratio som var mindre en AA standaren som er på 4.5. Som følge har jeg nå endret alle disse til å være innenfor.<br>
             Jeg har også testet med lighthouse på sidene mine, der fikk jeg rundt 90 på de fleste. Det var noen sider der jeg hadde litt mindre, rundt 86.
-          </br>Lighthouse klagde blant annet på at noen av linkene ikke var navngitt, og det har jeg nå endret. 
+          <br>Lighthouse klagde blant annet på at noen av linkene ikke var navngitt, og det har jeg nå endret. 
           </p>
           <h2 class="before-after-con">Før</h2>
           <div class="contrast-img-con">
@@ -185,10 +184,10 @@
       </main>
       <footer>
         <ul>
-          <li alt="Del på facebook" class="footerface"><a label="facebook" data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.infotorget.no"><i class="footer fab fa-facebook-f"></i></a></li>
-          <li alt="Send til Elon Musk"><a label="twitter" data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://www.infotorget.no"><i class="footer fa-brands fa-twitter"></i></a></li>
-          <li alt="Del på linkedin"><a label="linked" data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.infotorget.no"><i class="footer fa-brands fa-linkedin-in"></i></a></li>
-          <li alt="Del på reddit"><a label="reddit" data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://www.infotorget.no"><i class="footer fa-brands fa-reddit-alien"></i></a></li>
+          <li class="name"><a data-share="aricle:Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.infotorget.no"><i class="footer fab fa-facebook-f"></i></a></li>
+          <li><a data-share="aricle:Twitter" rel="noopener" target="_blank" href="https://twitter.com/share?url=https://www.infotorget.no"><i class="footer fa-brands fa-twitter"></i></a></li>
+          <li><a data-share="aricle:Linkedin" rel="noopener" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.infotorget.no"><i class="footer fa-brands fa-linkedin-in"></i></a></li>
+          <li><a data-share="aricle:Reddit" rel="noopener" target="_blank" href="http://reddit.com/submit?url=https://www.infotorget.no"><i class="footer fa-brands fa-reddit-alien"></i></a></li>
         </ul>
         <p id="C">Copyright 2022</p>
       </footer>
